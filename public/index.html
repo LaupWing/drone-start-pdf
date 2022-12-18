@@ -6,7 +6,129 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="./main.css">
+   <style>
+      @font-face {
+         font-family: "Calibri Light";
+         font-style: normal;
+         font-weight: normal;
+         src: local("Calibri Light"), url("assets/fonts/calibril.woff") format("woff");
+      }
+
+      body {
+         font-family: "Calibri Light", "Lato", Arial;
+         /* width: 21cm;  */
+         /* min-height: 29.7cm;  */
+         background: #fff;
+         display: block;
+         /* box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7); */
+         /* margin: 5px auto 20px auto; */
+         /* margin-top: 50px; */
+         /* padding: 1cm 1.1cm; */
+         box-sizing: border-box;
+      }
+
+      body img.mce-pagebreak {
+         cursor: default;
+         cursor: grab;
+         display: block;
+         width: 100%;
+         width: calc(100% + 2.2cm);
+         margin-left: -1.1cm;
+         margin-right: -1.1cm;
+         height: 14px;
+         margin-top: 20px;
+         margin-bottom: 20px;
+         page-break-before: always;
+         border: 0;
+         box-shadow: inset 0 5px 8px -6px rgba(0, 0, 0, 1);
+         border-bottom: 1px solid #555;
+         background: #ecf0f3;
+      }
+
+      header {
+         display: none;
+      }
+
+      img,
+      table {
+         max-width: 100%;
+      }
+
+      body img.mce-pagebreak:hover {
+         opacity: 0.9;
+      }
+
+      body img.mce-pagebreak {
+         height: 10px;
+         margin-left: 0;
+         margin-right: 0;
+      }
+
+      td p {
+         margin: 0;
+      }
+
+      article {
+         border: solid 1px #ccc;
+         padding: 5px;
+      }
+
+      h2 .version::after {
+         content: ".";
+      }
+
+      del {
+         background: #ef4444;
+         color: white;
+         padding: 2px;
+      }
+
+      ins {
+         background: #22c55e;
+         color: white;
+         padding: 2px;
+      }
+
+      @media print {
+         article {
+            border: none;
+            padding: 0;
+         }
+
+         body {
+            box-shadow: none;
+            margin: 0;
+         }
+
+         body img.mce-pagebreak {
+            margin: 0;
+            opacity: 0;
+            height: 0;
+         }
+      }
+
+      /* width */
+      ::-webkit-scrollbar {
+         width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+         border-radius: 10px;
+         background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+         background: rgb(201, 200, 200);
+         border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+         background: rgb(180, 180, 180);
+      }
+   </style>
 </head>
 
 <body>
