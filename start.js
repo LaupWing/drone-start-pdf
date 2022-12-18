@@ -7,19 +7,18 @@ const options = {
    format: "A4",
    orientation: "portrait",
    border: "10mm",
-   header: {
-      height: "28mm",
-      contents: '<div style="text-align: center;">Author: Shyam Hajare</div>',
-   },
-   paginationOffset: 10,
+   // header: {
+   //    height: "28mm",
+   //    contents: '<div style="text-align: center;">Author: Shyam Hajare</div>',
+   // },
    footer: {
-      height: "40mm",
+      height: "20mm",
       contents: {
          first: "",
          // 2: "Second page", // Any page number is working. 1-based index
          default:
             `
-               <div style="text-align:right; mt-auto; width: 100%; display:flex; justify-content: flex-end;">
+               <div style="text-align:right; margin-top: 20px;">
                   <span>{{page}}</span>
                   /<span>{{pages}}</span>
                </div>
