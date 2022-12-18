@@ -1,6 +1,7 @@
 const fs = require("fs")
 const pdf = require("pdf-creator-node")
 const html = fs.readFileSync("./public/index.html", "utf8")
+const test = require("./test")
 
 const options = {
    format: "A4",
@@ -25,7 +26,9 @@ const options = {
 const document = {
    html: html,
    path: "./output.pdf",
-   data:{},
+   data:{
+      content: test
+   },
    type: "",
 }
 

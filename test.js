@@ -1,4 +1,4 @@
-export default `
+module.exports = `
 <h1 id="mcetoc_1eu8bvokpk4"></h1>
    <p><span style="font-size: 18pt; color: #f8cac6; background-color: #000000;">VOORPLAAT <strong>FOTO INVOEGEN</strong></span></p>
    <p style="text-align: center;">&nbsp;</p>
