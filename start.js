@@ -10,7 +10,7 @@ const options = {
    header: {
       height: "28mm",
       contents: {
-         first: false,
+         first: " ",
          default: '<div style="text-align: center;">Author: Shyam Hajare</div>'
       },
    },
