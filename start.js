@@ -9,7 +9,10 @@ const options = {
    border: "10mm",
    header: {
       height: "28mm",
-      contents: '<div style="text-align: center;">Author: Shyam Hajare</div>',
+      contents: {
+         first: '<div style="height: 0">e</div>',
+         default: '<div style="text-align: center;">Author: Shyam Hajare</div>'
+      },
    },
    footer: {
       height: "20mm",
