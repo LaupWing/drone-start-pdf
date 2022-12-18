@@ -7,10 +7,10 @@ const options = {
    format: "A4",
    orientation: "portrait",
    border: "10mm",
-   // header: {
-   //    height: "28mm",
-   //    contents: '<div style="text-align: center;">Author: Shyam Hajare</div>',
-   // },
+   header: {
+      height: "28mm",
+      contents: '<div style="text-align: center;">Author: Shyam Hajare</div>',
+   },
    footer: {
       height: "20mm",
       contents: {
