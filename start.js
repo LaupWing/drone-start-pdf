@@ -3,7 +3,7 @@ const pdf = require("pdf-creator-node")
 const html = fs.readFileSync("./public/index.html", "utf8")
 
 const options = {
-   format: "A3",
+   format: "A4",
    orientation: "portrait",
    border: "10mm",
    header: {
@@ -25,14 +25,16 @@ const options = {
 const document = {
    html: html,
    path: "./output.pdf",
+   data:{},
    type: "",
 }
 
 pdf
-  .create(document, options)
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((error) => {
-    console.error(error);
-  })
+   .create(document, options)
+   .then((res) => {
+      console.log(res)
+   })
+   .catch((error) => {
+      console.error(error)
+      process.exit(1)
+   })
