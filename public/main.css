@@ -4,19 +4,19 @@
    font-weight: normal;
    src: local("Calibri Light"), url("assets/fonts/calibril.woff") format("woff");
 }
-body#tinymce {
+body {
    font-family: "Calibri Light", "Lato", Arial;
-   width: 21cm; /* this should be 21 cm as the page size, but I have little space here in fiddle (15)*/
-   min-height: 29.7cm; /* this should be 29.7 cm (A4 page) (24.2) */
+   /* width: 21cm;  */
+   /* min-height: 29.7cm;  */
    background: #fff;
    display: block;
-   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
-   margin: 5px auto 20px auto;
-   margin-top: 50px;
-   padding: 1cm 1.1cm;
+   /* box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7); */
+   /* margin: 5px auto 20px auto; */
+   /* margin-top: 50px; */
+   /* padding: 1cm 1.1cm; */
    box-sizing: border-box;
 }
-body#tinymce img.mce-pagebreak {
+body img.mce-pagebreak {
    cursor: default;
    cursor: grab;
    display: block;
@@ -40,10 +40,10 @@ img,
 table {
    max-width: 100%;
 }
-body#tinymce img.mce-pagebreak:hover {
+body img.mce-pagebreak:hover {
    opacity: 0.9;
 }
-body#tinymce img.mce-pagebreak {
+body img.mce-pagebreak {
    height: 10px;
    margin-left: 0;
    margin-right: 0;
@@ -75,11 +75,11 @@ ins {
       border: none;
       padding: 0;
    }
-   body#tinymce {
+   body {
       box-shadow: none;
       margin: 0;
    }
-   body#tinymce img.mce-pagebreak {
+   body img.mce-pagebreak {
       margin: 0;
       opacity: 0;
       height: 0;
